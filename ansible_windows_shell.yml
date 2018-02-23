@@ -4,7 +4,7 @@
 
   tasks:
     - name: Execute shell command
-      win_shell: "Test' 'Hello' 'World.cmd"
+      win_shell: '"Test" "Hello" "World.cmd"'
       args:
         executable: cmd
         chdir: c:\temp
