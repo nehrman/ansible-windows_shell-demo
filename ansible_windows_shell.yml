@@ -1,0 +1,11 @@
+---
+- name: Test windows Shell modules
+  hosts: windows
+
+  tasks:
+    - name: Execute shell command
+      win_shell: "Test Hello World.cmd"
+      args:
+        executable: cmd
+        chdir: "c:\temp\"
+        
